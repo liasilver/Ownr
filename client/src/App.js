@@ -48,7 +48,9 @@ function App(){
     {(typeof backendData.users === 'undefined') ?(
       <p> Loading ... </p>
     ): (
+    
       backendData.users.map((user, i) => (
+        /* should map each url to image displayed in carousel */
         <p key={i}> {user}</p>
     ))
     )}
